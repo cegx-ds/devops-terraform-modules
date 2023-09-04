@@ -1,0 +1,21 @@
+{
+	"name": "devops-terraform-modules",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+	        "extensions": [
+	        	"ms-azuretools.vscode-docker",
+	        	"davidanson.vscode-markdownlint",
+	        	"redhat.vscode-yaml",
+                "4ops.terraform"
+	        ]
+		}
+	},
+	"postCreateCommand": "",
+	"remoteUser": "vscode",
+	"mounts": [
+		"type=bind,source=/Users/${localEnv:USER}/.ssh,target=/home/vscode/.ssh,readonly"
+	]
+}
